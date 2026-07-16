@@ -1,0 +1,18 @@
+{
+  "name": "vtravel-backend",
+  "version": "0.2.0",
+  "description": "Backend de Vtravel — API REST + Dashboard. Sin dependencias externas a propósito (ver README.md): usa node:sqlite y http nativos porque el entorno donde se construyó no tiene acceso a npm install. Migrar a PostgreSQL real solo requiere cambiar src/db.js.",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "seed-admin": "node src/seed-admin.js"
+  },
+  "dependencies": {
+    "pg": "^8.13.0"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
